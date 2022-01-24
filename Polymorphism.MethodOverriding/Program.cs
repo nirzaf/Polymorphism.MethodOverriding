@@ -1,19 +1,14 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+Console.WriteLine("Polymorphism using method overriding (Dynamic Polymorphism)");
 
+MobilePhone mp = new MobilePhone();
 
-public class MobilePhone
-{
-    public virtual void Typing()
-    {
-        Console.WriteLine("Using Keypad");
-    }
-}
+mp.Typing();
 
-public class SmartPhone : MobilePhone
-{
-    public override void Typing()
-    {
-        Console.WriteLine("Using QWERTY Keyboard");
-    }
-}
+SmartPhone sm = new SmartPhone();
+
+sm.Typing();
+
+MobilePhone mpNew = new SmartPhone();
+
+mpNew.Typing();
