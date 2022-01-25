@@ -1,11 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
 Console.WriteLine("Polymorphism using method overriding (Dynamic Polymorphism)");
 
-MobilePhone mp = new MobilePhone();
+var mp = new MobilePhone();
 
 mp.Typing();
 
-SmartPhone sm = new SmartPhone();
+var sm = new SmartPhone();
 
 sm.Typing();
 
